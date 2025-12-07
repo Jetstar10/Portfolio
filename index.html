@@ -1,54 +1,558 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Goh Jet Yun | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+
+  <!-- Put your site title here -->
+  <title>
+    Goh Jet Yun | Undergraduate at Singapore University of Technology and Design
+  </title>
+
+  <meta name="description" content="I have over 20 years of experience as a developer and leader in the tech industry.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Shelley Benhof, Docker, Sitecore, Web Development, .NET, C#" />
+  <link rel="stylesheet" href="index.css" />
 </head>
+
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1>Goh Jet Yun</h1>
-      <p></p>
-      <a class="btn" href="#projects">View Projects</a>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#academic_information" class="nav__link">Academic Information</a></li>
+          <li class="nav__item"><a href="#qualifications" class="nav__link">Qualifications</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Goh Jet Wei</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>Singapore University of Technology and Design (SUTD) Undergraduate | SUTD Honours and Research Programme (SHARP) Scholar | Computer Science and Design (CSD)</p>
+        <div class="btn-container">
+            <a href="#contact" class="btn btn--pink">Get in touch</a>
+            <a href="https://github.com/WindJammer6" class="btn btn--pink">Github</a>
+            <a href="https://www.linkedin.com/in/gohjetwei/" class="btn btn--pink">LinkedIn</a>
+        </div>
+      </div>
     </div>
   </header>
 
-  <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>
-        I am a Computer Science enthusiast passionate about AI, cybersecurity, and systems.
-        I enjoy building practical projects and exploring new technologies.
-      </p>
-    </section>
+  <main role="main">
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <div class="project-list">
-        <article class="project">
-          <h3>Project 1: Title</h3>
-          <p>Short description of what this project does and what you worked on.</p>
-          <a href="https://github.com/Jetstar10" target="_blank">View on GitHub</a>
-        </article>
+    <!-- ***** Projects ***** -->
 
-        <article class="project">
-          <h3>Project 2: Title</h3>
-          <p>Short description of another project.</p>
-          <a href="#" target="_blank">View on GitHub</a>
-        </article>
+    <section class="projects" id="projects">
+      <div class="row">
+        <h2>Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Towards Adversarially Robust Human-in-the-Loop Learning for HVAC Systems</h3>
+              <p>
+                Co-authored the accepted paper 
+                <b>
+                  'Towards Adversarially Robust Human-in-the-Loop Learning for HVAC Systems'
+                </b>
+                , at the Artificial Intelligence for Wireless Communications and Networking (AI4WCN) Workshop in 2024, held by the Association for the 
+                Advancement of Artificial Intelligence (AAAI) with other SUTD students 
+                <a href="https://www.linkedin.com/in/adikum/" target="_blank">
+                  Aditya Kumar
+                </a>
+                and
+                <a href="https://www.linkedin.com/in/wai-shun-lee/" target="_blank">
+                  Lee Wai Shun
+                </a>
+                with the mentorship of 
+                <a href="https://www.linkedin.com/in/marie-therese-siew-659042103/" target="_blank">
+                  Dr Marie Siew
+                </a>
+                with the introduction of a novel framework, 
+                <b>
+                  RARL_HIL 
+                </b> and conducting experiments with it in a unique Heating, Ventilation and Air-Conditioning (HVAC) system simulation.
+              </p>
+              <ul class="work__list">
+                <li>Crowdsourcing</li>
+                <li>Deep Reinforcement Learning</li>
+                <li>Machine Learning</li>
+                <li>Crowdsourcing</li>
+                <li>Python</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://openreview.net/pdf?id=4Cdf8XL1YC" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/waishun78/hitl_hvac" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-1.jpeg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>UROP - Telegram chatbot for novice programmers to learn coding</h3>
+              <p>
+                With the mentorship of 
+                <a href="https://www.linkedin.com/in/oka-kurniawan-6314479/?originalSubdomain=sg" target="_blank">
+                  Professor Oka Kurniawan
+                </a>
+                , I created a functional prototype of a telegram chatbot, with the integration of Retrieval Augmented Generation, Prompt Engineering and 
+                Chatbase custom GPT LLM to help smoothen that starting step for new programmers into the programming world. I also created a Streamlit 
+                website that allows course instructors to manage the telegram chatbot and view student conversations with the telegram chatbot as learning 
+                review.
+              </p>
+              <ul class="work__list">
+                <li>Chatbase LLM</li>
+                <li>Mistral LLM</li>
+                <li>Snowflake</li>
+                <li>Telegram Bot API</li>
+                <li>Firebase API</li>
+                <li>Streamlit</li>
+                <li>Figma</li>
+                <li>Vercel</li>
+                <li>Python</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://t.me/codebuddy1bot" target="_blank" class="link__text">
+                  Visit Telegram Bot <span>&rarr;</span>
+                </a>
+                <a href="https://27-codebuddy-app-website-epgyqtybxho9kbdcussvyt.streamlit.app/" target="_blank" class="link__text">
+                  Visit Streamlit Website <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/WindJammer6/22.-Deployed-Streamlit-Web-Application-for-Telegram-Chatbot-with-Chatbase-custom-GPT-LLM-model-API" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-2.png" class="work__image" alt="Project 2" />
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>2D Unity Game</h3>
+              <p>
+                I enjoy making fun minigames in my own free time such as this one. Check it out!
+              </p>
+              <ul class="work__list">
+                <li>Unity</li>
+                <li>C#</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://windjammer6.itch.io/2d-unity-game-by-windjammer6" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/WindJammer6/19.-Deployed-2D-Unity-Game">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__video-box">
+                <video class="work__video" controls>
+                    <source src="./videos/project-3.mp4" type="video/mp4">
+                </video>
+            </div>
+          </div>
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>Leetcode Algorithmic Programming</h3>
+              <p>
+                I enjoy challenging myself with algorithmic questions on Leetcode. Check out my list of questions solved here! Solved over 100 questions currently.
+              </p>
+              <ul class="work__list">
+                <li>Data Structures and Algorithms</li>
+                <li>Python</li>
+                <li>Java</li>
+                <li>SQL (MySQL)</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="https://leetcode.com/u/WindJammer6/" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/WindJammer6/14.-My-Leetcode-Solutions">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/project-4.jpeg" class="work__image" alt="Project 4" />
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+  <!-- ***** Academic Information ***** -->
+
+    <section class="academic_information" id="academic_information">
+      <div class="row">
+        <h2>Academic Information</h2>
+        <h3>Alma Mater</h3>
+        
+        <div class="education__cards">
+          <!-- East Spring Primary School -->
+          <div class="education__card">
+            <img src="./images/East-Spring-Primary-School.jpg" class="school__image" alt="East Spring Primary School" />
+            <div class="education__content">
+              <h4><a href="https://www.eastspringpri.moe.edu.sg/" target="_blank">East Spring Primary School</a></h4>
+              <p>From 2009 to 2014</p>
+              <p>Primary Education</p>
+            </div>
+          </div>
+
+          <!-- Pasir Ris Secondary School -->
+          <div class="education__card">
+            <img src="./images/Pasir-Ris-Secondary-School.jpg" class="school__image" alt="Pasir Ris Secondary School" />
+            <div class="education__content">
+              <h4><a href="https://www.pasirrissec.moe.edu.sg/" target="_blank">Pasir Ris Secondary School</a></h4>
+              <p>From 2015 to 2018</p>
+              <p>Secondary Education</p>
+            </div>
+          </div>
+    
+          <!-- Temasek Junior College -->
+          <div class="education__card">
+            <img src="./images/Temasek-Junior-College.png" class="school__image" alt="Temasek Junior College" />
+            <div class="education__content">
+              <h4><a href="https://www.temasekjc.moe.edu.sg/" target="_blank">Temasek Junior College</a></h4>
+              <p>From 2019 to 2020</p>
+              <p>Junior College Education</p>
+            </div>
+          </div>
+    
+          <!-- Singapore University of Technology and Design -->
+          <div class="education__card">
+            <img src="./images/Singapore-University-of-Technology-and-Design.jpg" class="school__image" alt="Singapore University of Technology and Design" />
+            <div class="education__content">
+              <h4><a href="https://www.sutd.edu.sg/" target="_blank">Singapore University of Technology and Design</a></h4>
+              <p>From 2024 to 2027</p>
+              <p>Bachelors in Engineering (Computer Science and Design), specialising in AI and Cybersecurity</p>
+              <p>SUTD Honours and Research Programme (SHARP)</p>
+            </div>
+          </div>      
+        </div>  
+
+        <h3>Subject Combinations</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Grade</th>
+                    <th>Sciences</th>
+                    <th>Humanities</th>
+                    <th>Languages</th>
+                    <th>Co-Curricular Activities</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Secondary 1</td>
+                    <td>Mathematics, Science</td>
+                    <td>Literal Art, Design & Technology, Music</td>
+                    <td>English, Chinese</td>
+                    <td>Choir, Badminton</td>
+                </tr>
+                <tr>
+                    <td>Secondary 2</td>
+                    <td>Mathematics, Science</td>
+                    <td>History, Geography, English Literature</td>
+                    <td>English, Chinese</td>
+                    <td>Student's Council, Choir, Badminton</td>
+                </tr>
+                <tr>
+                    <td>Secondary 3</td>
+                    <td>Additional Mathematics, Elementary Mathematics, Pure Chemistry, Pure Physics, Pure Biology</td>
+                    <td>Geography, Social Sciences</td>
+                    <td>English, Chinese</td>
+                    <td>Student's Council, Choir, Badminton, Table Tennis</td>
+                </tr>
+                <tr>
+                    <td>Secondary 4</td>
+                    <td>Additional Mathematics, Elementary Mathematics, Pure Chemistry, Pure Physics, Pure Biology</td>
+                    <td>Geography, Social Sciences</td>
+                    <td>English, Chinese</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>JC Year 1</td>
+                    <td>H2 Mathematics, H2 Chemistry, H2 Physics</td>
+                    <td>H1 Economics, H1 Project Work</td>
+                    <td>H1 General Paper, H1 Chinese</td>
+                    <td>Badminton</td>
+                </tr>
+                <tr>
+                    <td>JC Year 2</td>
+                    <td>H2 Mathematics, H2 Chemistry, H2 Physics</td>
+                    <td>H1 Economics</td>
+                    <td>H1 General Paper</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+          <p></p>
+        </div>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Academic Year</th>
+                    <th>Trimester 1</th>
+                    <th>Trimester 2</th>
+                    <th>Trimester 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Year 1</td>
+                    <td>10.013 Modelling and Analysis, 10.014 Computational Thinking for Design</td>
+                    <td>10.018 Modelling Space and Systems, 3.007 Design Thinking and Innovation</td>
+                    <td>10.022 Modelling Uncertainty, 10.020 Data Driven World</td>
+                </tr>
+                <tr>
+                    <td>Year 2</td>
+                    <td>50.001 Information Systems and Programming, 50.002 Computation Structures, 50.004 Algorithms</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Year 3</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Year 4</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    
+      </div>    
+    </section>
+
+    
+
+    <!-- ***** Qualifications ***** -->
+
+    <section class="qualifications" id="qualifications">
+      <div class="row">
+        <h2>Qualifications</h2>
+        <h3>Competition and Events (Academic)</h3>
+        
+        <div class="table-container">
+          <table id="competitions-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0, 'competitions-table')">Events Name ▲</th>
+                <th onclick="sortTable(1, 'competitions-table')">Award ▲</th>
+                <th onclick="sortTable(2, 'competitions-table')">Year ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <p></p>
+        </div>
+
+        <h3>Programmes and Events (Service)</h3>        
+        <div class="table-container">
+          <table id="service-programmes-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0, 'service-programmes-table')">Events Name ▲</th>
+                <th onclick="sortTable(1, 'service-programmes-table')">Role ▲</th>
+                <th onclick="sortTable(2, 'service-programmes-table')">Year ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+
+        <div>
+          <p></p>
+        </div>
+
+        <h3>Programmes and Events (Leadership)</h3>        
+        <div class="table-container">
+          <table id="leadership-programmes-table">
+            <thead>
+              <tr>
+                <th onclick="sortTable(0, 'leadership-programmes-table')">Events Name ▲</th>
+                <th onclick="sortTable(1, 'leadership-programmes-table')">Role ▲</th>
+                <th onclick="sortTable(2, 'leadership-programmes-table')">Year ▲</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Data will be inserted here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <p>
+              Hello! I am Jet Wei. Currently an undergraduate at 
+              <a href="https://www.sutd.edu.sg/" target="_blank">
+                Singapore University of Technology and Design (SUTD)
+              </a> 
+              studying Computer Science and Design (CSD) under the SUTD Honours And Research Programme (SHARP). 
+              I specialise in the field of AI 🤖 and Cybersecurity 🔒.
+            </p>
+            <p>
+              Other than sitting in front of a computer, I enjoy playing various sports such as badminton (I used to play competitively) 🏸 and soccer ⚽. I also play the piano 🎹 and perform in an acapella (I am a Baritone) 🎤🎶 in my free time!
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="./images/Jetwei_resume.pdf" class="btn" download="Jetwei_resume.pdf">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/Jetwei_photo_professional.jpg" alt="" />
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>© 2025 Goh Jet Yun</p>
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          The quickest way to reach out to me is via an email! I will do my best to respond back as soon as possible. 😊
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="mailto:goh_jetwei@mymail.sutd.edu.sg" class="btn">goh_jetwei@mymail.sutd.edu.sg</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
   </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  
+  <script src="./index.js"></script>
+
+
+  <script>
+    // Load Data from JSON Using JavaScript for Academic Competitions and Events
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("json/academic_competitions_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#competitions-table tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+
+  <script>
+    // Load Data from JSON Using JavaScript for Service Programmes and Events
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("json/service_programmes_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#service-programmes-table tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+
+  <script>
+    // Load Data from JSON Using JavaScript for Leadership Programmes and Events
+    document.addEventListener("DOMContentLoaded", function () {
+        fetch("json/leadership_programmes_and_events.json")  // Load data from JSON file
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.querySelector("#leadership-programmes-table tbody");
+                data.forEach(entry => {
+                    let row = document.createElement("tr");
+                    if (entry.highlight) row.classList.add("highlight"); // Apply highlight if needed
+                    row.innerHTML = `<td>${entry.event}</td><td>${entry.award}</td><td>${entry.year}</td>`;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error("Error loading competition data:", error));
+    });
+    </script>
+  
 </body>
+
 </html>
